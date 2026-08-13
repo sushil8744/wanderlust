@@ -14,7 +14,7 @@ COPY package*.json ./
 RUN npm install
 
 #Copy the application source code 
-COPY . .
+COPY package*.json ./ 
 
 # RUN tests
 RUN npm test
